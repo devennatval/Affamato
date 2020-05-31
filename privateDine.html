@@ -203,7 +203,7 @@
             <tr>
                 <td>
                     <div class="rsv-nav">
-                        <a class="btn-rsv btn-left" onclick="toggle3()">Cancel</a>
+                        <a class="btn-rsv btn-left" onclick="togglecancel()">Cancel</a>
                         <a class="btn-rsv btn-right" onclick="toggle2()">Submit</a>
                     </div>
                 </td>
@@ -340,6 +340,13 @@
                 var blur = document.getElementById('blur');
                 popup2.classList.toggle('active');
             }
+            function togglecancel(){
+                var blur = document.getElementById('testing');
+                blur.classList.toggle('blur');
+                var blur = document.getElementById('blur');
+                popup.classList.toggle('active');
+            }
+
         </script>
     </div><!--testing-->
 </body>

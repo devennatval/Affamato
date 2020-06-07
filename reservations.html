@@ -54,7 +54,7 @@
                     <br><br>
                     All reservations are confirmed by phone at least three days prior. Any cancellations must be made at least 48 hours prior to the time of the reservation to avoid a 298 dollar (plus tax) per person late cancellation charge; this policy applies to same day reservations as well. If we are unable to confirm with you, your reservation will be cancelled one day prior to the reservation at 5:00 pm. We thank you for your understanding.</p>
                     <div class="reserve-button">
-                        <a onclick="toggle()">DINING ROOM RESERVATION</a>
+                        <a onclick="togglereserve()">DINING ROOM RESERVATION</a>
                     </div>
                 </div>
 
@@ -71,7 +71,7 @@
                     <br><br>
                     All reservations are confirmed by phone at least three days prior. Any cancellations must be made at least 48 hours prior to the time of the reservation to avoid a 298 dollar (plus tax) per person late cancellation charge; this policy applies to same day reservations as well. If we are unable to confirm with you, your reservation will be cancelled one day prior to the reservation at 5:00 pm. We thank you for your understanding.</p>
                     <div class="reserve-button">
-                        <a onclick="toggle()">TERRACE RESERVATION</a>
+                        <a onclick="togglereserve()">TERRACE RESERVATION</a>
                     </div>
                 </div>
 			</div>
@@ -82,7 +82,7 @@
         <label>Full Name*: </label><input type="text" name="custName"> <br>
         <label>Email*: </label><input type="text" name="custEmail"> <br>
         <div class="rsv-nav">
-            <a class="btn-rsv btn-left" onclick="toggle()">Close</a>
+            <a class="btn-rsv btn-left" onclick="togglereserve()">Close</a>
             <a class="btn-rsv btn-right" onclick="toggle2()">Next</a>
         </div>
 
@@ -180,7 +180,7 @@
         <p>You will be notified via Email within 24 hours.</p>
         <p>Thank You. -Affamato Team</p><br>
         <div class="rsv-nav">
-            <a class="btn-rsv btn-left" onclick="toggle7()">Close</a>
+            <a class="btn-rsv btn-left" onclick="toggleclose()">Close</a>
         </div>
     </div>     
 
@@ -245,7 +245,7 @@
         }
         </script>
         <script type="text/javascript">
-            function toggle(){
+            function togglereserve(){
                 var blur = document.getElementsByClassName('wrapper')[0];
                 blur.classList.toggle('blur');
                 var blur = document.getElementById('blur');
@@ -281,7 +281,7 @@
                 var blur = document.getElementById('blur');
                 popup6.classList.toggle('active');
             }
-            function toggle7(){
+            function toggleclose(){
                 var blur = document.getElementsByClassName('wrapper')[0];
                 blur.classList.toggle('blur');
                 var blur = document.getElementById('blur');

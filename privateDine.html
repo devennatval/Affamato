@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/privateDineCss.css">
 </head>
 <body>
-    <div id="testing">
+    <div id="popupbg">
     <header>
         <div class="site-header">
             <div id="site-header-primary">
@@ -43,7 +43,7 @@
 	                    <p>Private dining available 7 days a week.</p>
 
 	                    <div class="reserve-button">
-                        	<a onclick="toggle()">INQUIRE NOW</a>
+                        	<a onclick="toggleInquire()">INQUIRE NOW</a>
                     	</div>
 					</div>
 				<div class="reservation-image" style='background-image:url("source/private2.jpg")'>
@@ -84,7 +84,7 @@
                     <p>Chef Tanz's full-service catering and events production company featuring Affamato's celebrated cuisine and refined service. This daily end-of-the-month Special Event is available for offsite events at your residence or a venue of your choosing. Tanz Events delivers world-class dining experiences beyond the four walls of the restaurant for parties of 20 to over 200.</p>
 
                     <div class="reserve-button">
-                        <a onclick="toggle()">INQUIRE NOW</a>
+                        <a onclick="toggleInquire()">INQUIRE NOW</a>
                     </div>
                 </div>
 
@@ -204,7 +204,7 @@
                 <td>
                     <div class="rsv-nav">
                         <a class="btn-rsv btn-left" onclick="togglecancel()">Cancel</a>
-                        <a class="btn-rsv btn-right" onclick="toggle2()">Submit</a>
+                        <a class="btn-rsv btn-right" onclick="togglesubmit()">Submit</a>
                     </div>
                 </td>
             </tr>
@@ -238,7 +238,7 @@
                 </tr>
                 <tr>
                     <td style="text-align:center;">
-                        <a class="btn-rsv btn-cntr" onclick="toggle3()">Close</a>
+                        <a class="btn-rsv btn-cntr" onclick="toggleclose()">Close</a>
                     </td>
                 </tr>
 
@@ -322,32 +322,32 @@
         }
         </script>
         <script type="text/javascript">
-            function toggle(){
-                var blur = document.getElementById('testing');
+            function toggleInquire(){
+                var blur = document.getElementById('popupbg');
                 blur.classList.toggle('blur');
                 var blur = document.getElementById('blur');
                 popup.classList.toggle('active');
             }
-            function toggle2(){
+            function togglesubmit(){
                 var blur = document.getElementById('blur');
                 popup.classList.toggle('active');
                 var blur = document.getElementById('blur');
                 popup2.classList.toggle('active');
             }
-            function toggle3(){
-                var blur = document.getElementById('testing');
+            function toggleclose(){
+                var blur = document.getElementById('popupbg');
                 blur.classList.toggle('blur');
                 var blur = document.getElementById('blur');
                 popup2.classList.toggle('active');
             }
             function togglecancel(){
-                var blur = document.getElementById('testing');
+                var blur = document.getElementById('popupbg');
                 blur.classList.toggle('blur');
                 var blur = document.getElementById('blur');
                 popup.classList.toggle('active');
             }
 
         </script>
-    </div><!--testing-->
+    </div><!--popupbg-->
 </body>
 </html>
